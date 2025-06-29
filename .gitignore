@@ -1,0 +1,9 @@
+**/results/
+**/*.pt
+__pycache__
+*.pyc
+/venv/
+/env/
+/models/
+.idea/
+/experiments/
