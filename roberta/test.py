@@ -25,7 +25,7 @@ test_dataloader = create_dataloader(
 # 加载分类模型
 num_labels = 10  # 根据分类任务中类别数设定
 model = RoBerta(config['model']['pretrained_model_name'], num_labels, config['model']['dropout'])
-model.load_state_dict(torch.load('../experiments/experiment_1/best_add.pt'))
+model.load_state_dict(torch.load('../experiments/experiment_1/best.pt'))
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 model = model.to(device)
 
